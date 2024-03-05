@@ -73,6 +73,16 @@ namespace BAITAP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hotel {
+            get {
+                object obj = ResourceManager.GetObject("hotel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kinhlup {
             get {
                 object obj = ResourceManager.GetObject("kinhlup", resourceCulture);
@@ -86,6 +96,16 @@ namespace BAITAP.Properties {
         internal static System.Drawing.Bitmap logopetshop {
             get {
                 object obj = ResourceManager.GetObject("logopetshop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lotus {
+            get {
+                object obj = ResourceManager.GetObject("lotus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
