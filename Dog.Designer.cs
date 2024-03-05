@@ -36,10 +36,10 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,7 +95,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(748, 185);
+            this.comboBox2.Location = new System.Drawing.Point(746, 185);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(153, 24);
             this.comboBox2.TabIndex = 7;
@@ -110,21 +110,27 @@
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;
             // 
-            // dataGridView1
+            // flowLayoutPanel1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(378, 246);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(712, 318);
-            this.dataGridView1.TabIndex = 13;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(374, 246);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(733, 330);
+            this.flowLayoutPanel1.TabIndex = 11;
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(1110, 246);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(28, 330);
+            this.vScrollBar1.TabIndex = 12;
+            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
             // 
             // Dog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.vScrollBar1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -139,11 +145,11 @@
             this.Controls.SetChildIndex(this.comboBox1, 0);
             this.Controls.SetChildIndex(this.comboBox2, 0);
             this.Controls.SetChildIndex(this.pictureBox6, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.flowLayoutPanel1, 0);
+            this.Controls.SetChildIndex(this.vScrollBar1, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +164,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
