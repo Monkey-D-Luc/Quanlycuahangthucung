@@ -38,14 +38,17 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Location = new System.Drawing.Point(261, 0);
             this.panel1.Name = "panel1";
@@ -125,6 +128,16 @@
             this.vScrollBar1.TabIndex = 12;
             this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(184, 36);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(66, 54);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 13;
+            this.pictureBox7.TabStop = false;
+            // 
             // Dog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -150,6 +163,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +180,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

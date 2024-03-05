@@ -129,6 +129,7 @@
             this.label3.Size = new System.Drawing.Size(82, 29);
             this.label3.TabIndex = 9;
             this.label3.Text = "CART";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 

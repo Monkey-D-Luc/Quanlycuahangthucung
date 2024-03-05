@@ -107,5 +107,12 @@ namespace BAITAP
             Service service = new Service();
             service.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart(); 
+            cart.Show();
+        }
     }
 }
