@@ -100,5 +100,12 @@ namespace BAITAP
             Shopping shopping = new Shopping();
             shopping.Show();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Service service = new Service();
+            service.Show();
+        }
     }
 }
