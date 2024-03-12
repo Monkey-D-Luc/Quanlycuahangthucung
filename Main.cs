@@ -102,16 +102,19 @@ namespace BAITAP
         private void label2_Click_1(object sender, EventArgs e)
         {
             shopcontrol1.BringToFront();
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
             servicecontrol1.BringToFront();
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
             cartcontrol1.BringToFront();
+            
         }
 
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -125,6 +128,21 @@ namespace BAITAP
         }
 
         private void shopcontrol1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
