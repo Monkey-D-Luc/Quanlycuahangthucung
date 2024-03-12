@@ -15,6 +15,11 @@ namespace BAITAP
         public Main()
         {
             InitializeComponent();
+            shopcontrol1.MainForm = this;
+        }
+        public void modog()
+        {
+            dogcontrol1.BringToFront();
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -26,7 +31,7 @@ namespace BAITAP
         {
             
         }
-        // out proj
+        
         private void Main_FormClosing(object sender, FormClosedEventArgs e)
         {
             
@@ -96,23 +101,32 @@ namespace BAITAP
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            Shopping shopping = new Shopping();
-            shopping.Show();
+            shopcontrol1.BringToFront();
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Service service = new Service();
-            service.Show();
+            servicecontrol1.BringToFront();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Cart cart = new Cart(); 
-            cart.Show();
+            cartcontrol1.BringToFront();
+        }
+
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+          Application.Exit();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void shopcontrol1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

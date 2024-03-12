@@ -30,5 +30,15 @@ namespace BAITAP
         {
             Console.WriteLine("abc");
         }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Application.Exit();
+        }
     }
 }

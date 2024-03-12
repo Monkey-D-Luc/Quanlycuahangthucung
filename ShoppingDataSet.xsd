@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ShoppingDataSet" targetNamespace="http://tempuri.org/ShoppingDataSet.xsd" xmlns:mstns="http://tempuri.org/ShoppingDataSet.xsd" xmlns="http://tempuri.org/ShoppingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ShoppingConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ShoppingConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BAITAP.Properties.Settings.GlobalReference.Default.ShoppingConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DogTableAdapter" GeneratorDataComponentClassName="DogTableAdapter" Name="Dog" UserDataComponentName="DogTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ShoppingConnectionString (Settings)" DbObjectName="Shopping.dbo.Dog" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Dog_type FROM dbo.Dog</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Dog_type" DataSetColumn="Dog_type" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ShoppingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ShoppingDataSet" msprop:Generator_DataSetName="ShoppingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Dog" msprop:Generator_RowEvHandlerName="DogRowChangeEventHandler" msprop:Generator_RowDeletedName="DogRowDeleted" msprop:Generator_RowDeletingName="DogRowDeleting" msprop:Generator_RowEvArgName="DogRowChangeEvent" msprop:Generator_TablePropName="Dog" msprop:Generator_RowChangedName="DogRowChanged" msprop:Generator_RowChangingName="DogRowChanging" msprop:Generator_TableClassName="DogDataTable" msprop:Generator_RowClassName="DogRow" msprop:Generator_TableVarName="tableDog" msprop:Generator_UserTableName="Dog">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Dog_type" msprop:Generator_ColumnPropNameInRow="Dog_type" msprop:Generator_ColumnPropNameInTable="Dog_typeColumn" msprop:Generator_ColumnVarNameInTable="columnDog_type" msprop:Generator_UserColumnName="Dog_type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cart.cs">
-      <SubType>Form</SubType>
+    <Compile Include="cartcontrol.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Cart.Designer.cs">
-      <DependentUpon>Cart.cs</DependentUpon>
+    <Compile Include="cartcontrol.Designer.cs">
+      <DependentUpon>cartcontrol.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dog.cs">
-      <SubType>Form</SubType>
+    <Compile Include="dogcontrol.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Dog.Designer.cs">
-      <DependentUpon>Dog.cs</DependentUpon>
+    <Compile Include="dogcontrol.Designer.cs">
+      <DependentUpon>dogcontrol.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -72,23 +72,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service.cs">
-      <SubType>Form</SubType>
+    <Compile Include="servicecontrol.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Service.Designer.cs">
-      <DependentUpon>Service.cs</DependentUpon>
+    <Compile Include="servicecontrol.Designer.cs">
+      <DependentUpon>servicecontrol.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shopping.cs">
-      <SubType>Form</SubType>
+    <Compile Include="shopcontrol.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Shopping.Designer.cs">
-      <DependentUpon>Shopping.cs</DependentUpon>
+    <Compile Include="shopcontrol.Designer.cs">
+      <DependentUpon>shopcontrol.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cart.resx">
-      <DependentUpon>Cart.cs</DependentUpon>
+    <Compile Include="ShoppingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cartcontrol.resx">
+      <DependentUpon>cartcontrol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dog.resx">
-      <DependentUpon>Dog.cs</DependentUpon>
+    <EmbeddedResource Include="dogcontrol.resx">
+      <DependentUpon>dogcontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -101,11 +106,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Service.resx">
-      <DependentUpon>Service.cs</DependentUpon>
+    <EmbeddedResource Include="servicecontrol.resx">
+      <DependentUpon>servicecontrol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shopping.resx">
-      <DependentUpon>Shopping.cs</DependentUpon>
+    <EmbeddedResource Include="shopcontrol.resx">
+      <DependentUpon>shopcontrol.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +126,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ShoppingDataSet.xsc">
+      <DependentUpon>ShoppingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet.xss">
+      <DependentUpon>ShoppingDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
