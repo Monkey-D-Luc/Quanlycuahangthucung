@@ -46,6 +46,7 @@
             this.dogcontrol1 = new BAITAP.dogcontrol();
             this.servicecontrol1 = new BAITAP.servicecontrol();
             this.cartcontrol1 = new BAITAP.cartcontrol();
+            this.infocontrol1 = new BAITAP.infocontrol();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -245,11 +246,19 @@
             this.cartcontrol1.Size = new System.Drawing.Size(999, 673);
             this.cartcontrol1.TabIndex = 3;
             // 
+            // infocontrol1
+            // 
+            this.infocontrol1.Location = new System.Drawing.Point(263, 0);
+            this.infocontrol1.Name = "infocontrol1";
+            this.infocontrol1.Size = new System.Drawing.Size(999, 673);
+            this.infocontrol1.TabIndex = 6;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.infocontrol1);
             this.Controls.Add(this.shopcontrol1);
             this.Controls.Add(this.dogcontrol1);
             this.Controls.Add(this.servicecontrol1);
@@ -293,5 +302,6 @@
         private cartcontrol cartcontrol1;
         private dogcontrol dogcontrol1;
         private servicecontrol servicecontrol1;
+        private infocontrol infocontrol1;
     }
 }

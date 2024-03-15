@@ -113,9 +113,29 @@ namespace BAITAP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap m19uug6s {
+            get {
+                object obj = ResourceManager.GetObject("m19uug6s", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_poodles_doodles_1458916 {
             get {
                 object obj = ResourceManager.GetObject("pexels-poodles-doodles-1458916", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_poodles_doodles_14589161 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-poodles-doodles-14589161", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

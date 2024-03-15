@@ -55,7 +55,9 @@ namespace BAITAP
         private void button1_Click(object sender, EventArgs e)
         {   
             this.Hide();
-            Program.login.Show();
+            Login login = new Login();
+            login.ShowDialog();
+            this.Close();
             
         }
 
@@ -81,7 +83,7 @@ namespace BAITAP
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-
+            infocontrol1.BringToFront();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

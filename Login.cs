@@ -36,14 +36,14 @@ namespace BAITAP
                 {
                     this.Hide();
                     Main main = new Main();
-                    main.Show();
+                    main.ShowDialog();
                     connection.Close();
                     this.Close();
 
                 }
                 else
                 {
-                    MessageBox.Show("!");
+                    MessageBox.Show("Đăng nhập không thành công!");
                     textBox1.Clear();
                     textBox2.Clear();
                     connection.Close();
@@ -74,6 +74,25 @@ namespace BAITAP
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Register register = new Register();
+            register.ShowDialog();
+            this.Close();
+            
         }
     }
 }
