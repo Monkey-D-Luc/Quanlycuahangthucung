@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static BAITAP.Main;
 
 namespace BAITAP
 {
@@ -21,12 +22,13 @@ namespace BAITAP
        
         private void button1_Click(object sender, EventArgs e)
         {
+            SqlConnection connection = ConnectionManager.connection;
             try
             {
                 String username, password;
                 username = textBox1.Text;
                 password = textBox2.Text;
-                SqlConnection connection = new SqlConnection(@"Data Source=SETSUNA\SQLEXPRESS;Initial Catalog=BAITAP;Integrated Security=True;Encrypt=False");
+                
                 connection.Open();
                 String query = "SELECT * FROM login WHERE username ='" + username + "' AND password = '" + password + "'";
                 SqlDataAdapter da = new SqlDataAdapter(query, connection);

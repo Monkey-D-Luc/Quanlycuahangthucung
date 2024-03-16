@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,11 @@ namespace BAITAP
             InitializeComponent();
             shopcontrol1.MainForm = this;
             servicecontrol1.MainForm = this;
+        }
+        public class ConnectionManager
+        {
+            public static SqlConnection connection = new SqlConnection(@"Data Source=MSI;Initial Catalog=BAITAP;Integrated Security=True;Encrypt=False");
+            public static SqlConnection connection2 = new SqlConnection(@"Data Source=MSI;Initial Catalog=Shopping;Integrated Security=True;Encrypt=False");
         }
         public void modog()
         {
