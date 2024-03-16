@@ -28,11 +28,16 @@ namespace BAITAP
         {
             dogcontrol1.BringToFront();
         }
+        public void mocat()
+        {
+            catcontrol1.BringToFront();
+        }
 
         public void mospaprice()
         {
             spapricecontrol1.BringToFront();
         }
+        
         public void mohotelprice()
         {
             hotelpricecontrol1.BringToFront();
@@ -175,6 +180,11 @@ namespace BAITAP
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void infocontrol1_Load(object sender, EventArgs e)
         {
 
         }

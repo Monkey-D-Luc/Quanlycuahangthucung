@@ -30,5 +30,22 @@ namespace BAITAP
         {
             MainForm.modog();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            MainForm.mocat();
+        }
+
+
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            MainForm.mocat();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            MainForm.modog();
+        }
     }
 }

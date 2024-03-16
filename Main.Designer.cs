@@ -38,24 +38,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.infocontrol1 = new BAITAP.infocontrol();
-            this.shopcontrol1 = new BAITAP.shopcontrol();
             this.dogcontrol1 = new BAITAP.dogcontrol();
             this.servicecontrol1 = new BAITAP.servicecontrol();
             this.cartcontrol1 = new BAITAP.cartcontrol();
             this.spapricecontrol1 = new BAITAP.spapricecontrol();
             this.hotelpricecontrol1 = new BAITAP.hotelpricecontrol();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.catcontrol1 = new BAITAP.catcontrol();
+            this.shopcontrol1 = new BAITAP.shopcontrol();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -174,6 +175,19 @@
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(24, 546);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 41);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 14;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.UseWaitCursor = true;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
@@ -208,19 +222,11 @@
             // 
             // infocontrol1
             // 
-            this.infocontrol1.Location = new System.Drawing.Point(263, 0);
+            this.infocontrol1.Location = new System.Drawing.Point(263, 1);
             this.infocontrol1.Name = "infocontrol1";
             this.infocontrol1.Size = new System.Drawing.Size(999, 673);
             this.infocontrol1.TabIndex = 6;
-            // 
-            // shopcontrol1
-            // 
-            this.shopcontrol1.Location = new System.Drawing.Point(263, 1);
-            this.shopcontrol1.MainForm = null;
-            this.shopcontrol1.Name = "shopcontrol1";
-            this.shopcontrol1.Size = new System.Drawing.Size(999, 673);
-            this.shopcontrol1.TabIndex = 2;
-            this.shopcontrol1.Load += new System.EventHandler(this.shopcontrol1_Load);
+            this.infocontrol1.Load += new System.EventHandler(this.infocontrol1_Load);
             // 
             // dogcontrol1
             // 
@@ -259,18 +265,20 @@
             this.hotelpricecontrol1.Size = new System.Drawing.Size(999, 673);
             this.hotelpricecontrol1.TabIndex = 8;
             // 
-            // pictureBox5
+            // catcontrol1
             // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(24, 546);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 41);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.UseWaitCursor = true;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.catcontrol1.Location = new System.Drawing.Point(263, 1);
+            this.catcontrol1.Name = "catcontrol1";
+            this.catcontrol1.Size = new System.Drawing.Size(999, 673);
+            this.catcontrol1.TabIndex = 9;
+            // 
+            // shopcontrol1
+            // 
+            this.shopcontrol1.Location = new System.Drawing.Point(263, 0);
+            this.shopcontrol1.MainForm = null;
+            this.shopcontrol1.Name = "shopcontrol1";
+            this.shopcontrol1.Size = new System.Drawing.Size(999, 673);
+            this.shopcontrol1.TabIndex = 10;
             // 
             // Main
             // 
@@ -278,13 +286,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.infocontrol1);
-            this.Controls.Add(this.shopcontrol1);
             this.Controls.Add(this.dogcontrol1);
             this.Controls.Add(this.servicecontrol1);
             this.Controls.Add(this.cartcontrol1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.spapricecontrol1);
             this.Controls.Add(this.hotelpricecontrol1);
+            this.Controls.Add(this.catcontrol1);
+            this.Controls.Add(this.shopcontrol1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -296,10 +305,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -318,7 +327,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private shopcontrol shopcontrol1;
         private cartcontrol cartcontrol1;
         private dogcontrol dogcontrol1;
         private servicecontrol servicecontrol1;
@@ -326,5 +334,7 @@
         private spapricecontrol spapricecontrol1;
         private hotelpricecontrol hotelpricecontrol1;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private catcontrol catcontrol1;
+        private shopcontrol shopcontrol1;
     }
 }

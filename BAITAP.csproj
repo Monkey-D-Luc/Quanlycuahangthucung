@@ -52,6 +52,12 @@
     <Compile Include="cartcontrol.Designer.cs">
       <DependentUpon>cartcontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="catcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="catcontrol.Designer.cs">
+      <DependentUpon>catcontrol.cs</DependentUpon>
+    </Compile>
     <Compile Include="dogcontrol.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="cartcontrol.resx">
       <DependentUpon>cartcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catcontrol.resx">
+      <DependentUpon>catcontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dogcontrol.resx">
       <DependentUpon>dogcontrol.cs</DependentUpon>
