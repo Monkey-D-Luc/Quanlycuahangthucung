@@ -58,6 +58,12 @@
     <Compile Include="dogcontrol.Designer.cs">
       <DependentUpon>dogcontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="hotelpricecontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hotelpricecontrol.Designer.cs">
+      <DependentUpon>hotelpricecontrol.cs</DependentUpon>
+    </Compile>
     <Compile Include="infocontrol.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,11 +107,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShoppingDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="spapricecontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="spapricecontrol.Designer.cs">
+      <DependentUpon>spapricecontrol.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="cartcontrol.resx">
       <DependentUpon>cartcontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dogcontrol.resx">
       <DependentUpon>dogcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotelpricecontrol.resx">
+      <DependentUpon>hotelpricecontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="infocontrol.resx">
       <DependentUpon>infocontrol.cs</DependentUpon>
@@ -129,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="shopcontrol.resx">
       <DependentUpon>shopcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spapricecontrol.resx">
+      <DependentUpon>spapricecontrol.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

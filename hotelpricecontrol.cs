@@ -10,25 +10,21 @@ using System.Windows.Forms;
 
 namespace BAITAP
 {
-    public partial class shopcontrol : UserControl
-    { 
-        public Main MainForm
-        {
-            get;set;
-        }
-        public shopcontrol()
+    public partial class hotelpricecontrol : UserControl
+    {
+        public hotelpricecontrol()
         {
             InitializeComponent();
         }
 
-        private void shopcontrol_Load(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
-            MainForm.modog();
+
         }
     }
 }

@@ -16,12 +16,21 @@ namespace BAITAP
         {
             InitializeComponent();
             shopcontrol1.MainForm = this;
+            servicecontrol1.MainForm = this;
         }
         public void modog()
         {
             dogcontrol1.BringToFront();
         }
 
+        public void mospaprice()
+        {
+            spapricecontrol1.BringToFront();
+        }
+        public void mohotelprice()
+        {
+            hotelpricecontrol1.BringToFront();
+        }
         private void Main_Load(object sender, EventArgs e)
         {
 
@@ -145,6 +154,21 @@ namespace BAITAP
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void spapricecontrol2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spapricecontrol1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }

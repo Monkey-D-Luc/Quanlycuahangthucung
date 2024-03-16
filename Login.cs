@@ -26,7 +26,7 @@ namespace BAITAP
                 String username, password;
                 username = textBox1.Text;
                 password = textBox2.Text;
-                SqlConnection connection = new SqlConnection(@"Data Source=LAPTOP-50DBODNC;Initial Catalog=BAITAP;Integrated Security=True;Encrypt=False");
+                SqlConnection connection = new SqlConnection(@"Data Source=SETSUNA\SQLEXPRESS;Initial Catalog=BAITAP;Integrated Security=True;Encrypt=False");
                 connection.Open();
                 String query = "SELECT * FROM login WHERE username ='" + username + "' AND password = '" + password + "'";
                 SqlDataAdapter da = new SqlDataAdapter(query, connection);
@@ -93,6 +93,11 @@ namespace BAITAP
             register.ShowDialog();
             this.Close();
             
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
