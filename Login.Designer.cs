@@ -66,26 +66,26 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.MistyRose;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(57, 113);
+            this.label2.Location = new System.Drawing.Point(57, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 45);
+            this.label2.Size = new System.Drawing.Size(167, 35);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Username";
+            this.label2.Text = "Username:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.MistyRose;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(57, 178);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 45);
+            this.label3.Size = new System.Drawing.Size(167, 35);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Password";
+            this.label3.Text = "Password:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox2
@@ -127,12 +127,12 @@
             this.linkLabel2.BackColor = System.Drawing.Color.MistyRose;
             this.linkLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel2.Location = new System.Drawing.Point(74, 255);
+            this.linkLabel2.Location = new System.Drawing.Point(98, 240);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(71, 22);
+            this.linkLabel2.Size = new System.Drawing.Size(76, 22);
             this.linkLabel2.TabIndex = 15;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Đăng kí";
+            this.linkLabel2.Text = "Register";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
@@ -141,12 +141,12 @@
             this.linkLabel1.BackColor = System.Drawing.Color.MistyRose;
             this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(51, 297);
+            this.linkLabel1.Location = new System.Drawing.Point(59, 275);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(134, 22);
+            this.linkLabel1.Size = new System.Drawing.Size(153, 22);
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Quên mật khẩu?";
+            this.linkLabel1.Text = "Forgot password?";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // button1
@@ -155,7 +155,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(312, 264);
+            this.button1.Location = new System.Drawing.Point(328, 255);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 42);
             this.button1.TabIndex = 13;
@@ -208,12 +208,13 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.MistyRose;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(15, 178);
+            this.pictureBox5.Location = new System.Drawing.Point(15, 168);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(43, 45);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 11;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
