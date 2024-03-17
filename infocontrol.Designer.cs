@@ -38,7 +38,6 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::BAITAP.Properties.Resources.user;
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;

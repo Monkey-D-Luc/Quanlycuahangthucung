@@ -21,8 +21,8 @@ namespace BAITAP
         }
         public class ConnectionManager
         {
-            public static SqlConnection connection = new SqlConnection(@"Data Source=MSI;Initial Catalog=BAITAP;Integrated Security=True;Encrypt=False");
-            public static SqlConnection connection2 = new SqlConnection(@"Data Source=MSI;Initial Catalog=Shopping;Integrated Security=True;Encrypt=False");
+            public static SqlConnection connection = new SqlConnection(@"Data Source=SETSUNA\SQLEXPRESS;Initial Catalog=BAITAP;Integrated Security=True;Encrypt=False");
+            public static SqlConnection connection2 = new SqlConnection(@"Data Source=SETSUNA\SQLEXPRESS;Initial Catalog=Shopping;Integrated Security=True;Encrypt=False");
         }
         public void modog()
         {
@@ -185,6 +185,11 @@ namespace BAITAP
         }
 
         private void infocontrol1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

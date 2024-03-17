@@ -96,6 +96,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="register1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register1.Designer.cs">
+      <DependentUpon>register1.cs</DependentUpon>
+    </Compile>
     <Compile Include="servicecontrol.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register1.resx">
+      <DependentUpon>register1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="servicecontrol.resx">
       <DependentUpon>servicecontrol.cs</DependentUpon>
