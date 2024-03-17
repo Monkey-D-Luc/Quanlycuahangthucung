@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BAITAP
 {
-    public partial class register1 : Form
+    public partial class Register : Form
     {
-        public register1()
+        public Register()
         {
             InitializeComponent();
         }

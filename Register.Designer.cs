@@ -1,6 +1,6 @@
 ﻿namespace BAITAP
 {
-    partial class register1
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(register1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -125,9 +125,9 @@
             this.label1.BackColor = System.Drawing.Color.MistyRose;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(15, 234);
+            this.label1.Location = new System.Drawing.Point(3, 234);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 35);
+            this.label1.Size = new System.Drawing.Size(230, 35);
             this.label1.TabIndex = 17;
             this.label1.Text = "Re-enter password:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -206,9 +206,9 @@
             this.label4.BackColor = System.Drawing.Color.MistyRose;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(168, 28);
+            this.label4.Location = new System.Drawing.Point(161, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 63);
+            this.label4.Size = new System.Drawing.Size(210, 63);
             this.label4.TabIndex = 9;
             this.label4.Text = "Register";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -251,9 +251,10 @@
             this.ClientSize = new System.Drawing.Size(972, 533);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "register1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "register1";
+            this.Text = "Register";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

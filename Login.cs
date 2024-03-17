@@ -91,7 +91,7 @@ namespace BAITAP
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            register1 register = new register1();
+            Register register = new Register();
             register.ShowDialog();
             this.Close();
             
