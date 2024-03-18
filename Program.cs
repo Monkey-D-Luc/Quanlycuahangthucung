@@ -10,18 +10,15 @@ namespace BAITAP
 {
     internal static class Program
     {
-        public static Login login;  
         
-        public class ConnectionManager
-        {
-            public static SqlConnection connection = new SqlConnection(@"Data Source=MSI;Initial Catalog=Petshop;Integrated Security=True;Encrypt=False");
-        }
+        public static string cnt = "Data Source=LAPTOP-50DBODNC;Initial Catalog=Petshop;Integrated Security=True;Encrypt=False";
+        
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            login = new Login();
+            Login login = new Login();
             Application.Run(login);
 
         }

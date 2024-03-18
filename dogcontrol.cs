@@ -23,7 +23,7 @@ namespace BAITAP
         }
         private void LoadDogType()
         {
-            SqlConnection connection = ConnectionManager.connection;
+            SqlConnection connection = new SqlConnection(cnt);
             string query = "SELECT dog_type FROM Dog";
             SqlCommand cmd = new SqlCommand(query, connection);
             connection.Open();
@@ -49,7 +49,7 @@ namespace BAITAP
             string selectedDogType = comboBox1.Text;
             if (!string.IsNullOrEmpty(selectedDogType))
             {
-                SqlConnection connection=ConnectionManager.connection;
+                SqlConnection connection=new SqlConnection(cnt);
                 string querry = "SELECT * FROM Dog WHERE dog_type =@DogType";
                 SqlCommand cmd = new SqlCommand(querry, connection);
                 cmd.Parameters.AddWithValue("@DogType", selectedDogType);

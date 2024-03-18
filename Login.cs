@@ -22,7 +22,7 @@ namespace BAITAP
        
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = ConnectionManager.connection;
+            SqlConnection connection = new SqlConnection(cnt);
             try
             {
                 String username, password;
