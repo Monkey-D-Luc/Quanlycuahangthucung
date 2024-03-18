@@ -19,11 +19,7 @@ namespace BAITAP
             shopcontrol1.MainForm = this;
             servicecontrol1.MainForm = this;
         }
-        public class ConnectionManager
-        {
-            public static SqlConnection connection = new SqlConnection(@"Data Source=MSI;Initial Catalog=BAITAP;Integrated Security=True;Encrypt=False");
-            public static SqlConnection connection2 = new SqlConnection(@"Data Source=MSI;Initial Catalog=Shopping;Integrated Security=True;Encrypt=False");
-        }
+       
         public void modog()
         {
             dogcontrol1.BringToFront();

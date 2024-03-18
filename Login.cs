@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static BAITAP.Main;
+using static BAITAP.Program;
 
 namespace BAITAP
 {
@@ -28,18 +28,18 @@ namespace BAITAP
                 String username, password;
                 username = textBox1.Text;
                 password = textBox2.Text;
-                
+
                 connection.Open();
-                String query = "SELECT * FROM login WHERE username ='" + username + "' AND password = '" + password + "'";
+                String query = "SELECT * FROM Login WHERE username ='" + username + "' AND password = '" + password + "'";
                 SqlDataAdapter da = new SqlDataAdapter(query, connection);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+                connection.Close();
                 if (dt.Rows.Count > 0)
                 {
                     this.Hide();
                     Main main = new Main();
                     main.ShowDialog();
-                    connection.Close();
                     this.Close();
 
                 }
@@ -48,14 +48,19 @@ namespace BAITAP
                     MessageBox.Show("Đăng nhập không thành công!");
                     textBox1.Clear();
                     textBox2.Clear();
-                    connection.Close();
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
         }
         
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -70,7 +75,7 @@ namespace BAITAP
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
 
         private void Login_Load(object sender, EventArgs e)
