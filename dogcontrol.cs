@@ -47,6 +47,7 @@ namespace BAITAP
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             string selectedDogType = comboBox1.Text;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             if (!string.IsNullOrEmpty(selectedDogType))
             {
                 SqlConnection connection=new SqlConnection(cnt);
@@ -63,6 +64,7 @@ namespace BAITAP
                     if (dt.Rows.Count > 0)
                     {
                         dataGridView1.DataSource = dt;
+                      
                     }
                 }
                 catch (Exception ex)
