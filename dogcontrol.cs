@@ -82,5 +82,44 @@ namespace BAITAP
                 MessageBox.Show("Vui lòng chọn một loại chó từ danh sách");
             }
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+       
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {   try
+            {
+                if (radioButton1.Checked)
+                {
+                    dataGridView1.Sort(dataGridView1.Columns["Dog_price"], ListSortDirection.Ascending);
+                }
+            }
+            catch (Exception){ MessageBox.Show("Vui lòng chọn một loại chó từ danh sách"); }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (radioButton2.Checked)
+                {
+                    dataGridView1.Sort(dataGridView1.Columns["Dog_price"], ListSortDirection.Descending);
+                }
+            }
+            catch (Exception) { MessageBox.Show("Vui lòng chọn một loại chó từ danh sách"); }
+        }
     }
 }
