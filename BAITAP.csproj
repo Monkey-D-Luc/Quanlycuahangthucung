@@ -64,6 +64,12 @@
     <Compile Include="dogcontrol.Designer.cs">
       <DependentUpon>dogcontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="hotelbooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hotelbooking.Designer.cs">
+      <DependentUpon>hotelbooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="hotelpricecontrol.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,6 +119,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShoppingDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="spabooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="spabooking.Designer.cs">
+      <DependentUpon>spabooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="spapricecontrol.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dogcontrol.resx">
       <DependentUpon>dogcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotelbooking.resx">
+      <DependentUpon>hotelbooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hotelpricecontrol.resx">
       <DependentUpon>hotelpricecontrol.cs</DependentUpon>
@@ -153,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="shopcontrol.resx">
       <DependentUpon>shopcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="spabooking.resx">
+      <DependentUpon>spabooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="spapricecontrol.resx">
       <DependentUpon>spapricecontrol.cs</DependentUpon>

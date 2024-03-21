@@ -89,7 +89,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(392, 84);
             this.button5.TabIndex = 17;
-            this.button5.Text = "Register";
+            this.button5.Text = "Booking";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -110,7 +110,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(392, 84);
             this.button2.TabIndex = 15;
-            this.button2.Text = "Register";
+            this.button2.Text = "Booking";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label8

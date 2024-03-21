@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace BAITAP
 {
-    public partial class cartcontrol : UserControl
+    public partial class hotelbooking : UserControl
     {
-        public cartcontrol()
+        public hotelbooking()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cartcontrol_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

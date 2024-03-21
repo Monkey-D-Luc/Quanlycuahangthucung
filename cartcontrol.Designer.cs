@@ -37,10 +37,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,22 +79,23 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(169, 163);
+            this.dataGridView1.Location = new System.Drawing.Point(114, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(654, 292);
+            this.dataGridView1.Size = new System.Drawing.Size(643, 292);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(169, 475);
+            this.panel2.Location = new System.Drawing.Point(114, 338);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(654, 47);
+            this.panel2.Size = new System.Drawing.Size(643, 47);
             this.panel2.TabIndex = 16;
             // 
             // label6
@@ -110,9 +113,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.LightCoral;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(169, 542);
+            this.button2.Location = new System.Drawing.Point(114, 405);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(317, 57);
+            this.button2.Size = new System.Drawing.Size(306, 72);
             this.button2.TabIndex = 17;
             this.button2.Text = "DELETE\r\n";
             this.button2.UseVisualStyleBackColor = false;
@@ -121,30 +124,41 @@
             // 
             this.button3.BackColor = System.Drawing.Color.LightGreen;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(506, 542);
+            this.button3.Location = new System.Drawing.Point(451, 405);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(317, 57);
+            this.button3.Size = new System.Drawing.Size(306, 72);
             this.button3.TabIndex = 18;
             this.button3.Text = "PURCHASE\r\n";
             this.button3.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Location = new System.Drawing.Point(55, 147);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(869, 503);
+            this.panel3.TabIndex = 19;
             // 
             // cartcontrol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Name = "cartcontrol";
             this.Size = new System.Drawing.Size(999, 673);
+            this.Load += new System.EventHandler(this.cartcontrol_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -159,5 +173,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel3;
     }
 }
