@@ -25,7 +25,6 @@ namespace BAITAP
             SqlConnection connection = new SqlConnection(cnt);
             try
             {
-                String username, password;
                 username = textBox1.Text;
                 password = textBox2.Text;
 
