@@ -157,12 +157,12 @@
             this.linkLabel2.BackColor = System.Drawing.Color.MistyRose;
             this.linkLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel2.Location = new System.Drawing.Point(109, 285);
+            this.linkLabel2.Location = new System.Drawing.Point(24, 14);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(55, 22);
+            this.linkLabel2.Size = new System.Drawing.Size(82, 22);
             this.linkLabel2.TabIndex = 16;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Login";
+            this.linkLabel2.Text = "<< Login";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // button1
@@ -243,7 +243,7 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // register1
+            // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -252,7 +252,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "register1";
+            this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.panel1.ResumeLayout(false);
