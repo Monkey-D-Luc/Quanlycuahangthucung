@@ -30,5 +30,15 @@ namespace BAITAP
         {
             MainForm.mohotelprice();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MainForm.mospabooking();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MainForm.mohotelbooking();
+        }
     }
 }

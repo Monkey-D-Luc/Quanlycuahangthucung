@@ -11,7 +11,7 @@ namespace BAITAP
     internal static class Program
     {
         
-        public static string cnt = "Data Source=LAPTOP-50DBODNC;Initial Catalog=Petshop;Integrated Security=True;Encrypt=False";
+        public static string cnt = @"Data Source=SETSUNA\SQLEXPRESS;Initial Catalog=Petshop;Integrated Security=True;Encrypt=False";
         public static string username;
         public static string password;
         [STAThread]

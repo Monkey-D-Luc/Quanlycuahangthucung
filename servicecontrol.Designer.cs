@@ -91,6 +91,7 @@
             this.button5.TabIndex = 17;
             this.button5.Text = "Booking";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
@@ -112,6 +113,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Booking";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label8
             // 
