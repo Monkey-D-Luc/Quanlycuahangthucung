@@ -19,7 +19,7 @@ namespace BAITAP
         {
             InitializeComponent();
             LoadDogType();
-          
+            
         }
         private void LoadDogType()
         {
@@ -120,6 +120,68 @@ namespace BAITAP
                 }
             }
             catch (Exception) { MessageBox.Show("Vui lòng chọn một loại chó từ danh sách"); }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = dataGridView1.CurrentCell.RowIndex;
+            if (selectedIndex >= 0)
+            {
+                DataGridViewRow selectedRow = dataGridView1.Rows[selectedIndex];
+                int idToDelete = Convert.ToInt32(selectedRow.Cells[0].Value); 
+                DataRow deletedRow = ((DataRowView)selectedRow.DataBoundItem).Row;
+
+                DeleteFromDatabase(idToDelete);
+
+               
+                AddToCart(deletedRow);
+
+                // Sau khi xóa, load lại dữ liệu vào DataGridView
+                pictureBox6_Click(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn thú cưng bạn muốn đưa vào giỏ.");
+            }
+        }
+        private void DeleteFromDatabase(int id)
+        {
+            using (SqlConnection connection = new SqlConnection(cnt))
+            {
+                connection.Open();
+                string query = "DELETE FROM Dog WHERE Dog_id = @Dog_id"; 
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Dog_id", id);
+                command.ExecuteNonQuery();
+            }
+        }
+        private void AddToCart(DataRow deletedRow)
+        {
+            // Chuyển dữ liệu từ hàng đã xóa vào bảng Cart
+            // Ví dụ: Sử dụng một SqlCommand để chèn dữ liệu vào bảng Cart
+            // Đảm bảo rằng bạn đã thiết lập đúng chuỗi kết nối và cấu trúc của bảng Cart
+            using (SqlConnection connection = new SqlConnection(cnt))
+            {
+                connection.Open();
+                string query = "INSERT INTO Cart (Dog_id, Dog_name,Dog_type,Dog_gender,Dog_age,Dog_price) VALUES (@Dog_id, @Dog_name,@Dog_type,@Dog_gender,@Dog_age,@Dog_price)"; // Thay đổi ColumnName1, ColumnName2, ... và VALUES tương ứng
+                SqlCommand command = new SqlCommand(query, connection);
+
+                // Thay đổi các tham số và giá trị tương ứng
+                command.Parameters.AddWithValue("@Dog_id", deletedRow["Dog_id"]);
+                command.Parameters.AddWithValue("@Dog_name", deletedRow["Dog_name"]);
+                command.Parameters.AddWithValue("@Dog_type", deletedRow["Dog_type"]);
+                command.Parameters.AddWithValue("@Dog_gender", deletedRow["Dog_gender"]);
+                command.Parameters.AddWithValue("@Dog_age", deletedRow["Dog_age"]);
+                command.Parameters.AddWithValue("@Dog_price", deletedRow["Dog_price"]);
+                // Tiếp tục cho các cột khác cần thêm vào
+
+                command.ExecuteNonQuery();
+            }
         }
     }
 }
