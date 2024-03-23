@@ -38,6 +38,15 @@ namespace BAITAP
         {
             hotelpricecontrol1.BringToFront();
         }
+        public void mospabooking()
+        {
+            spabooking1.BringToFront();
+        }
+
+        public void mohotelbooking()
+        {
+            hotelbooking1.BringToFront();
+        }
         private void Main_Load(object sender, EventArgs e)
         {
 

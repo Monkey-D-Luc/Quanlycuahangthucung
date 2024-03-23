@@ -50,6 +50,8 @@
             this.hotelpricecontrol1 = new BAITAP.hotelpricecontrol();
             this.catcontrol1 = new BAITAP.catcontrol();
             this.shopcontrol1 = new BAITAP.shopcontrol();
+            this.spabooking1 = new BAITAP.spabooking();
+            this.hotelbooking1 = new BAITAP.hotelbooking();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -284,6 +286,20 @@
             this.shopcontrol1.Size = new System.Drawing.Size(999, 673);
             this.shopcontrol1.TabIndex = 10;
             // 
+            // spabooking1
+            // 
+            this.spabooking1.Location = new System.Drawing.Point(265, 0);
+            this.spabooking1.Name = "spabooking1";
+            this.spabooking1.Size = new System.Drawing.Size(999, 673);
+            this.spabooking1.TabIndex = 11;
+            // 
+            // hotelbooking1
+            // 
+            this.hotelbooking1.Location = new System.Drawing.Point(264, 1);
+            this.hotelbooking1.Name = "hotelbooking1";
+            this.hotelbooking1.Size = new System.Drawing.Size(999, 673);
+            this.hotelbooking1.TabIndex = 12;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -298,6 +314,8 @@
             this.Controls.Add(this.hotelpricecontrol1);
             this.Controls.Add(this.catcontrol1);
             this.Controls.Add(this.shopcontrol1);
+            this.Controls.Add(this.spabooking1);
+            this.Controls.Add(this.hotelbooking1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -339,5 +357,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private catcontrol catcontrol1;
         private shopcontrol shopcontrol1;
+        private spabooking spabooking1;
+        private hotelbooking hotelbooking1;
     }
 }
