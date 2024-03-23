@@ -14,7 +14,7 @@ namespace BAITAP
 {
     public partial class Login : Form
     {
-        
+        public static string id;
         public Login()
         {
             InitializeComponent();
@@ -37,6 +37,7 @@ namespace BAITAP
                 if (dt.Rows.Count > 0)
                 {
                     this.Hide();
+                    id = username;
                     Main main = new Main();
                     main.ShowDialog();
                     this.Close();

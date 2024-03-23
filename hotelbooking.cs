@@ -14,7 +14,6 @@ namespace BAITAP
 {
     public partial class hotelbooking : UserControl
     {
-        string username = "sss";
         public hotelbooking()
         {
             InitializeComponent();
@@ -39,16 +38,18 @@ namespace BAITAP
         private void button1_Click(object sender, EventArgs e)
         {
             string formattedDate = dateTimePicker1.Value.ToString("yyyy-MM-dd");
-            string sqlQuery = $"INSERT INTO Booking VALUES (N'sss', '{formattedDate}', N'{comboBox1.Text}', N'{comboBox3.Text}', N'{textBox1.Text}')";
+            string sqlQuery = $"INSERT INTO Booking VALUES (N'{Login.id}', '{formattedDate}', N'{comboBox1.Text}', N'{comboBox3.Text}', N'{textBox1.Text}')";
             SqlConnection connection = new SqlConnection(cnt);
             SqlCommand cmd = new SqlCommand(sqlQuery, connection);
             connection.Open();
             cmd.ExecuteNonQuery();
+            showTable();
         }
+        
         private void showTable()
         {
             SqlConnection connection = new SqlConnection(cnt);
-            string querry = $"SELECT * FROM Booking ";
+            string querry = $"SELECT ngayHen, thuCung, canNang, moTa FROM Booking WHERE username= '{Login.id}'; ";
             SqlCommand cmd = new SqlCommand(querry, connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
