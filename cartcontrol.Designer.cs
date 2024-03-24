@@ -70,10 +70,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("HYWenHei-85W", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(420, 28);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 61);
+            this.label5.Size = new System.Drawing.Size(161, 58);
             this.label5.TabIndex = 0;
             this.label5.Text = "CART";
             // 
@@ -130,6 +130,7 @@
             this.button3.TabIndex = 18;
             this.button3.Text = "PURCHASE\r\n";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel3
             // 

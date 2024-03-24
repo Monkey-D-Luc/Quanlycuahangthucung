@@ -19,7 +19,7 @@ namespace BAITAP
         {
             InitializeComponent();
             LoadDogType();
-            
+            showTable();
         }
         private void LoadDogType()
         {
@@ -100,26 +100,19 @@ namespace BAITAP
        
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {   try
-            {
+        {  
                 if (radioButton1.Checked)
                 {
                     dataGridView1.Sort(dataGridView1.Columns["Dog_price"], ListSortDirection.Ascending);
                 }
-            }
-            catch (Exception){ MessageBox.Show("Vui lòng chọn một loại chó từ danh sách"); }
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            try
-            {
                 if (radioButton2.Checked)
                 {
                     dataGridView1.Sort(dataGridView1.Columns["Dog_price"], ListSortDirection.Descending);
                 }
-            }
-            catch (Exception) { MessageBox.Show("Vui lòng chọn một loại chó từ danh sách"); }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -142,7 +135,21 @@ namespace BAITAP
                 AddToCart(deletedRow);
 
                 // Sau khi xóa, load lại dữ liệu vào DataGridView
-                pictureBox6_Click(sender, e);
+                string selectedDogType = comboBox1.Text;
+                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                SqlConnection connection = new SqlConnection(cnt);
+                string querry = "SELECT * FROM Dog WHERE dog_type =@DogType";
+                SqlCommand cmd = new SqlCommand(querry, connection);
+                cmd.Parameters.AddWithValue("@DogType", selectedDogType);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                connection.Open();
+                adapter.Fill(dt);
+                connection.Close();
+                if (dt.Rows.Count > 0)
+                    {
+                        dataGridView1.DataSource = dt;
+                    }
             }
             else
             {
@@ -170,7 +177,6 @@ namespace BAITAP
                 connection.Open();
                 string query = "INSERT INTO Cart (Dog_id, Dog_name,Dog_type,Dog_gender,Dog_age,Dog_price) VALUES (@Dog_id, @Dog_name,@Dog_type,@Dog_gender,@Dog_age,@Dog_price)"; // Thay đổi ColumnName1, ColumnName2, ... và VALUES tương ứng
                 SqlCommand command = new SqlCommand(query, connection);
-
                 // Thay đổi các tham số và giá trị tương ứng
                 command.Parameters.AddWithValue("@Dog_id", deletedRow["Dog_id"]);
                 command.Parameters.AddWithValue("@Dog_name", deletedRow["Dog_name"]);
@@ -178,10 +184,38 @@ namespace BAITAP
                 command.Parameters.AddWithValue("@Dog_gender", deletedRow["Dog_gender"]);
                 command.Parameters.AddWithValue("@Dog_age", deletedRow["Dog_age"]);
                 command.Parameters.AddWithValue("@Dog_price", deletedRow["Dog_price"]);
-                // Tiếp tục cho các cột khác cần thêm vào
-
                 command.ExecuteNonQuery();
             }
         }
+        private void showTable()
+        {
+            SqlConnection connection = new SqlConnection(cnt);
+            string querry = $"SELECT * FROM Dog;";
+            SqlCommand cmd = new SqlCommand(querry, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            try
+            {
+                connection.Open();
+                adapter.Fill(dt);
+                connection.Close();
+                if (dt.Rows.Count > 0)
+                {
+                    dataGridView1.DataSource = dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
+
     }
 }
