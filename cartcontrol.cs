@@ -50,6 +50,11 @@ namespace BAITAP
                 {
                     dataGridView1.DataSource = dt;
                 }
+                else
+                {
+                    dt.Rows.Add("Chọn sản phẩm cần mua");
+                    dataGridView1.DataSource= dt;
+                }
             }
             catch (Exception ex)
             {
