@@ -18,8 +18,34 @@ namespace BAITAP
         {
             InitializeComponent();
             showTable();
+            
         }
+        private void showTotal()
+        {
+            double totalPrice = 0;
+            bool hasPrice = false;
 
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (!row.IsNewRow && row.Cells["Price"].Value != null && row.Cells["Price"].Value != DBNull.Value)
+                {
+                    double price;
+                    if (double.TryParse(row.Cells["Price"].Value.ToString(), out price))
+                    {
+                        totalPrice += price;
+                        hasPrice = true; 
+                    }
+                }
+            }
+            if (!hasPrice)
+            {
+                label1.Text = "Chọn sản phẩm từ cửa hàng";
+            }
+            else
+            {
+                label1.Text = totalPrice.ToString("C");
+            }
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -87,15 +113,11 @@ namespace BAITAP
         }
         private void AddToDog(DataRow deletedRow)
         {
-            // Chuyển dữ liệu từ hàng đã xóa vào bảng Cart
-            // Ví dụ: Sử dụng một SqlCommand để chèn dữ liệu vào bảng Cart
-            // Đảm bảo rằng bạn đã thiết lập đúng chuỗi kết nối và cấu trúc của bảng Cart
             using (SqlConnection connection = new SqlConnection(cnt))
             {
                 connection.Open();
                 string query = "INSERT INTO Dog (Dog_id, Dog_name,Dog_type,Dog_gender,Dog_age,Dog_price) VALUES (@Dog_id, @Dog_name,@Dog_type,@Dog_gender,@Dog_age,@Dog_price)"; // Thay đổi ColumnName1, ColumnName2, ... và VALUES tương ứng
                 SqlCommand command = new SqlCommand(query, connection);
-                // Thay đổi các tham số và giá trị tương ứng
                 command.Parameters.AddWithValue("@Dog_id", deletedRow["Id"]);
                 command.Parameters.AddWithValue("@Dog_name", deletedRow["PetName"]);
                 command.Parameters.AddWithValue("@Dog_type", deletedRow["PetType"]);
@@ -128,6 +150,7 @@ namespace BAITAP
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             showTable();
+            showTotal();
         }
     }
 }
