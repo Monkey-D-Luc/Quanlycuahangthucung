@@ -79,7 +79,7 @@ namespace BAITAP
             using (SqlConnection connection = new SqlConnection(cnt))
             {
                 connection.Open();
-                string query = "DELETE FROM Cart WHERE Dog_id = @Dog_id";
+                string query = "DELETE FROM Cart WHERE  Id = @Dog_id";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Dog_id", id);
                 command.ExecuteNonQuery();
@@ -93,15 +93,16 @@ namespace BAITAP
             using (SqlConnection connection = new SqlConnection(cnt))
             {
                 connection.Open();
-                string query = "INSERT INTO Dog (Dog_id, Dog_name,Dog_type,Dog_gender,Dog_age,Dog_price) VALUES (@Dog_id, @Dog_name,@Dog_type,@Dog_gender,@Dog_age,@Dog_price)"; // Thay đổi ColumnName1, ColumnName2, ... và VALUES tương ứng
+                string query = "INSERT INTO Dog (Dog_id, Dog_name,Dog_type,Dog_gender,Dog_age,Dog_price,Dog_species) VALUES (@Dog_id, @Dog_name,@Dog_type,@Dog_gender,@Dog_age,@Dog_price,@Dog_species)"; // Thay đổi ColumnName1, ColumnName2, ... và VALUES tương ứng
                 SqlCommand command = new SqlCommand(query, connection);
                 // Thay đổi các tham số và giá trị tương ứng
-                command.Parameters.AddWithValue("@Dog_id", deletedRow["Dog_id"]);
-                command.Parameters.AddWithValue("@Dog_name", deletedRow["Dog_name"]);
-                command.Parameters.AddWithValue("@Dog_type", deletedRow["Dog_type"]);
-                command.Parameters.AddWithValue("@Dog_gender", deletedRow["Dog_gender"]);
-                command.Parameters.AddWithValue("@Dog_age", deletedRow["Dog_age"]);
-                command.Parameters.AddWithValue("@Dog_price", deletedRow["Dog_price"]);
+                command.Parameters.AddWithValue("@Dog_id", deletedRow["Id"]);
+                command.Parameters.AddWithValue("@Dog_name", deletedRow["PetName"]);
+                command.Parameters.AddWithValue("@Dog_type", deletedRow["PetType"]);
+                command.Parameters.AddWithValue("@Dog_gender", deletedRow["Gender"]);
+                command.Parameters.AddWithValue("@Dog_age", deletedRow["Age"]);
+                command.Parameters.AddWithValue("@Dog_price", deletedRow["Price"]);
+                command.Parameters.AddWithValue("@Dog_species", deletedRow["Species"]);
                 command.ExecuteNonQuery();
             }
         }
