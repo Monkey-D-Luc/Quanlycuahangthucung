@@ -115,7 +115,13 @@ namespace BAITAP
 
                 AddToDog(deletedRow);
                 MessageBox.Show("Xoa vat pham thanh cong");
+                showTable();
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            showTable();
         }
     }
 }

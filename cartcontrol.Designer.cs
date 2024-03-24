@@ -38,11 +38,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,7 +97,7 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(114, 338);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(643, 47);
+            this.panel2.Size = new System.Drawing.Size(588, 47);
             this.panel2.TabIndex = 16;
             // 
             // label6
@@ -136,6 +138,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.button2);
@@ -144,6 +147,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(869, 503);
             this.panel3.TabIndex = 19;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(709, 330);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // cartcontrol
             // 
@@ -161,6 +175,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -176,5 +191,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

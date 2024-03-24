@@ -43,6 +43,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel1.SuspendLayout();
@@ -50,6 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -168,9 +170,9 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Location = new System.Drawing.Point(125, 155);
+            this.panel2.Location = new System.Drawing.Point(113, 155);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(365, 120);
+            this.panel2.Size = new System.Drawing.Size(377, 120);
             this.panel2.TabIndex = 24;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -180,7 +182,7 @@
             this.panel3.Controls.Add(this.radioButton2);
             this.panel3.Controls.Add(this.radioButton1);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Location = new System.Drawing.Point(549, 155);
+            this.panel3.Location = new System.Drawing.Point(509, 155);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(331, 120);
             this.panel3.TabIndex = 25;
@@ -212,10 +214,22 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(868, 170);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 26;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // dogcontrol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
@@ -233,6 +247,7 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -253,5 +268,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -134,22 +134,7 @@ namespace BAITAP
                
                 AddToCart(deletedRow);
 
-                // Sau khi xóa, load lại dữ liệu vào DataGridView
-                string selectedDogType = comboBox1.Text;
-                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                SqlConnection connection = new SqlConnection(cnt);
-                string querry = "SELECT * FROM Dog WHERE dog_type =@DogType";
-                SqlCommand cmd = new SqlCommand(querry, connection);
-                cmd.Parameters.AddWithValue("@DogType", selectedDogType);
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                connection.Open();
-                adapter.Fill(dt);
-                connection.Close();
-                if (dt.Rows.Count > 0)
-                    {
-                        dataGridView1.DataSource = dt;
-                    }
+                showTable();
             }
             else
             {
@@ -217,5 +202,9 @@ namespace BAITAP
             }
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            showTable();
+        }
     }
 }
