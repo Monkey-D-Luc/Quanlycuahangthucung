@@ -66,19 +66,7 @@ namespace BAITAP
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int selectedIndex = dataGridView1.CurrentCell.RowIndex;
-            if (selectedIndex >= 0)
-            {
-                DataGridViewRow selectedRow = dataGridView1.Rows[selectedIndex];
-                int idToDelete = Convert.ToInt32(selectedRow.Cells[0].Value);
-                DataRow deletedRow = ((DataRowView)selectedRow.DataBoundItem).Row;
-
-                DeleteFromDatabase(idToDelete);
-
-
-                AddToDog(deletedRow);
-                MessageBox.Show("mua thanh cong");
-            }
+            
            
         }
         private void DeleteFromDatabase(int id)
@@ -110,6 +98,23 @@ namespace BAITAP
                 command.Parameters.AddWithValue("@Dog_age", deletedRow["Dog_age"]);
                 command.Parameters.AddWithValue("@Dog_price", deletedRow["Dog_price"]);
                 command.ExecuteNonQuery();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = dataGridView1.CurrentCell.RowIndex;
+            if (selectedIndex >= 0)
+            {
+                DataGridViewRow selectedRow = dataGridView1.Rows[selectedIndex];
+                int idToDelete = Convert.ToInt32(selectedRow.Cells[0].Value);
+                DataRow deletedRow = ((DataRowView)selectedRow.DataBoundItem).Row;
+
+                DeleteFromDatabase(idToDelete);
+
+
+                AddToDog(deletedRow);
+                MessageBox.Show("Xoa vat pham thanh cong");
             }
         }
     }
