@@ -128,12 +128,12 @@ namespace BAITAP
                 connection.Open();
                 string query = "INSERT INTO Cart VALUES (@Cat_id, @Cat_name,@Cat_type,@Cat_gender,@Cat_age,@Cat_price,N'Mèo')";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Cat_id", deletedRow["Cat_id"]);
-                command.Parameters.AddWithValue("@Cat_name", deletedRow["Cat_name"]);
-                command.Parameters.AddWithValue("@Cat_type", deletedRow["Cat_type"]);
-                command.Parameters.AddWithValue("@Cat_gender", deletedRow["Cat_gender"]);
-                command.Parameters.AddWithValue("@Cat_age", deletedRow["Cat_age"]);
-                command.Parameters.AddWithValue("@Cat_price", deletedRow["Cat_price"]);
+                command.Parameters.AddWithValue("@Cat_id", deletedRow["ID"]);
+                command.Parameters.AddWithValue("@Cat_name", deletedRow["Tên pet"]);
+                command.Parameters.AddWithValue("@Cat_type", deletedRow["Giống pet"]);
+                command.Parameters.AddWithValue("@Cat_gender", deletedRow["Giới tính"]);
+                command.Parameters.AddWithValue("@Cat_age", deletedRow["Tuổi pet"]);
+                command.Parameters.AddWithValue("@Cat_price", deletedRow["Giá cả"]);
                 command.ExecuteNonQuery();
             }
         }
