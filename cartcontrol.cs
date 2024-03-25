@@ -12,6 +12,7 @@ using static BAITAP.Program;
 
 namespace BAITAP
 {
+
     public partial class cartcontrol : UserControl
     {
         public cartcontrol()
@@ -98,7 +99,6 @@ namespace BAITAP
         private void button3_Click(object sender, EventArgs e)
         {
             
-           
         }
         private void DeleteFromDatabase(int id)
         {
