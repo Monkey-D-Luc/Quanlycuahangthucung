@@ -51,7 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.shoppingDataSet1 = new BAITAP.ShoppingDataSet();
             this.shoppingDataSet2 = new BAITAP.ShoppingDataSet();
-            this.soThuTu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -199,6 +199,7 @@
             this.button2.TabIndex = 67;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -271,6 +272,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(486, 177);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 362);
@@ -280,15 +282,13 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.soThuTu});
             this.dataGridView1.Location = new System.Drawing.Point(28, 49);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(399, 289);
             this.dataGridView1.TabIndex = 49;
-            this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.sttColumn);
             // 
             // label4
             // 
@@ -310,12 +310,16 @@
             this.shoppingDataSet2.DataSetName = "ShoppingDataSet";
             this.shoppingDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // soThuTu
+            // label6
             // 
-            this.soThuTu.HeaderText = "STT";
-            this.soThuTu.MinimumWidth = 6;
-            this.soThuTu.Name = "soThuTu";
-            this.soThuTu.Width = 50;
+            this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(28, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(399, 288);
+            this.label6.TabIndex = 53;
+            this.label6.Text = "Không có lịch.";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // hotelbooking
             // 
@@ -369,6 +373,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private ShoppingDataSet shoppingDataSet1;
         private ShoppingDataSet shoppingDataSet2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soThuTu;
+        private System.Windows.Forms.Label label6;
     }
 }

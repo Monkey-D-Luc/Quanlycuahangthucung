@@ -1355,7 +1355,7 @@
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAaEAAAIACAYAAAArANMUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAiEZJREFUeF7t3QeYFUW6N/Bv9+7eu/deCUMYcg5DDhKHOETJMOQZcpIkUTLIkAQE
+        vQAADr0BR/uQrQAAiEZJREFUeF7t3QeYFUW6N/Bv9+7eu/deCUMYcg5DDhKHOETJMOQZcpIkUTLIkAQE
         BERAUUEwoIAkQYKBqJIElBxUcgYBXVTS1Ndv7453GP/d53Q6Xaf7vc/ze567pU5316mut7u66q3/J4Rg
         zE5/efToUc47d+5U//6HHzpv3759/MKFC99JSEjY3KtXrz1NmjQ5WbpMmWsZIyMf/O9TTwmSL3/+nwsV
         LvxTkaJFbzVs1Oh0j5499yaMH7/ptQUL3v/8888nnz59uiv9PeXvZgPHYwY8fvw48ueff670448/dty2
@@ -2059,10 +2059,4 @@
         LCAUD4RShQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="soThuTu.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="soThuTu.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

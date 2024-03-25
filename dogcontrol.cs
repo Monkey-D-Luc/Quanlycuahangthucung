@@ -186,6 +186,12 @@ namespace BAITAP
                 connection.Close();
                 if (dt.Rows.Count > 0)
                 {
+                    dt.Columns["Dog_id"].ColumnName = "ID";
+                    dt.Columns["Dog_name"].ColumnName = "Tên pet";
+                    dt.Columns["Dog_type"].ColumnName = "Giống pet";
+                    dt.Columns["Dog_gender"].ColumnName = "Giới tính";
+                    dt.Columns["Dog_age"].ColumnName = "Tuổi pet";
+                    dt.Columns["Dog_price"].ColumnName = "Giá cả";
                     dataGridView1.DataSource = dt;
                 }
             }
