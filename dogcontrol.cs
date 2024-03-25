@@ -154,15 +154,12 @@ namespace BAITAP
         }
         private void AddToCart(DataRow deletedRow)
         {
-            // Chuyển dữ liệu từ hàng đã xóa vào bảng Cart
-            // Ví dụ: Sử dụng một SqlCommand để chèn dữ liệu vào bảng Cart
-            // Đảm bảo rằng bạn đã thiết lập đúng chuỗi kết nối và cấu trúc của bảng Cart
+           
             using (SqlConnection connection = new SqlConnection(cnt))
             {
                 connection.Open();
-                string query = "INSERT INTO Cart VALUES (@Dog_id, @Dog_name,@Dog_type,@Dog_gender,@Dog_age,@Dog_price,N'Chó')"; // Thay đổi ColumnName1, ColumnName2, ... và VALUES tương ứng
+                string query = "INSERT INTO Cart VALUES (@Dog_id, @Dog_name,@Dog_type,@Dog_gender,@Dog_age,@Dog_price,N'Chó')";
                 SqlCommand command = new SqlCommand(query, connection);
-                // Thay đổi các tham số và giá trị tương ứng
                 command.Parameters.AddWithValue("@Dog_id", deletedRow["Dog_id"]);
                 command.Parameters.AddWithValue("@Dog_name", deletedRow["Dog_name"]);
                 command.Parameters.AddWithValue("@Dog_type", deletedRow["Dog_type"]);
