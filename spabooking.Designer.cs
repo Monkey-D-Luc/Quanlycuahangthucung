@@ -49,6 +49,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.soThuTu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel3.SuspendLayout();
@@ -194,6 +195,7 @@
             this.button1.TabIndex = 63;
             this.button1.Text = "Book";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -262,12 +264,15 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.soThuTu});
             this.dataGridView1.Location = new System.Drawing.Point(28, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(399, 289);
             this.dataGridView1.TabIndex = 50;
+            this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.sttColumn);
             // 
             // label4
             // 
@@ -289,6 +294,14 @@
             this.button2.TabIndex = 63;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // soThuTu
+            // 
+            this.soThuTu.HeaderText = "STT";
+            this.soThuTu.MinimumWidth = 6;
+            this.soThuTu.Name = "soThuTu";
+            this.soThuTu.Width = 50;
             // 
             // spabooking
             // 
@@ -338,5 +351,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soThuTu;
     }
 }

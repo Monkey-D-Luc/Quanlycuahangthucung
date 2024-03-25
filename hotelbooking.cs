@@ -45,8 +45,14 @@ namespace BAITAP
             cmd.ExecuteNonQuery();
             showTable();
         }
-        
-        private void showTable()
+        private void sttColumn(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                dataGridView1.Rows[row.Index].Cells[0].Value = (row.Index + 1).ToString();
+            }
+        }
+        public void showTable()
         {
             SqlConnection connection = new SqlConnection(cnt);
             string querry = $"SELECT ngayHen, thuCung, canNang, moTa FROM Booking WHERE username= '{Login.id}'; ";
@@ -60,6 +66,10 @@ namespace BAITAP
                 connection.Close();
                 if (dt.Rows.Count > 0)
                 {
+                    dt.Columns["ngayHen"].ColumnName = "Ngày hẹn";
+                    dt.Columns["thuCung"].ColumnName = "Thú cưng";
+                    dt.Columns["canNang"].ColumnName = "Cân nặng";
+                    dt.Columns["moTa"].ColumnName = "Mô tả";
                     dataGridView1.DataSource = dt;
                 }
             }

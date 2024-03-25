@@ -51,6 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.shoppingDataSet1 = new BAITAP.ShoppingDataSet();
             this.shoppingDataSet2 = new BAITAP.ShoppingDataSet();
+            this.soThuTu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -279,12 +280,15 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.soThuTu});
             this.dataGridView1.Location = new System.Drawing.Point(28, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(399, 289);
             this.dataGridView1.TabIndex = 49;
+            this.dataGridView1.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.sttColumn);
             // 
             // label4
             // 
@@ -305,6 +309,13 @@
             // 
             this.shoppingDataSet2.DataSetName = "ShoppingDataSet";
             this.shoppingDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // soThuTu
+            // 
+            this.soThuTu.HeaderText = "STT";
+            this.soThuTu.MinimumWidth = 6;
+            this.soThuTu.Name = "soThuTu";
+            this.soThuTu.Width = 50;
             // 
             // hotelbooking
             // 
@@ -358,5 +369,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private ShoppingDataSet shoppingDataSet1;
         private ShoppingDataSet shoppingDataSet2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soThuTu;
     }
 }

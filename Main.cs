@@ -41,11 +41,13 @@ namespace BAITAP
         public void mospabooking()
         {
             spabooking1.BringToFront();
+            spabooking1.showTable();
         }
 
         public void mohotelbooking()
         {
             hotelbooking1.BringToFront();
+            hotelbooking1.showTable();
         }
         private void Main_Load(object sender, EventArgs e)
         {
