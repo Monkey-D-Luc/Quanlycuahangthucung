@@ -49,6 +49,7 @@ namespace BAITAP
         }
         private void showTable()
         {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             SqlConnection connection = new SqlConnection(cnt);
             string querry = $"SELECT * FROM Cat;";
             SqlCommand cmd = new SqlCommand(querry, connection);
