@@ -10,16 +10,12 @@ using System.Windows.Forms;
 
 namespace BAITAP
 {
-    public partial class Purchasecontrol : UserControl
+    public partial class Purchase : Form
     {
-        public Purchasecontrol()
+        public Purchase()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -27,14 +23,9 @@ namespace BAITAP
 
         }
 
-        private void Purchasecontrol_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

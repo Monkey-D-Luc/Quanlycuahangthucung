@@ -18,6 +18,7 @@ namespace BAITAP
         public spabooking()
         {
             InitializeComponent();
+            showTable();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -38,6 +39,7 @@ namespace BAITAP
         }
         public void showTable()
         {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             SqlConnection connection = new SqlConnection(cnt);
             string querry = $"SELECT bookingID, ngayHen, thuCung, canNang, moTa FROM Booking WHERE username= '{Login.id}'; ";
             SqlCommand cmd = new SqlCommand(querry, connection);

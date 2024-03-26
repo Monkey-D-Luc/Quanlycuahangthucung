@@ -99,7 +99,8 @@ namespace BAITAP
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            Purchase purchase = new Purchase();
+            purchase.ShowDialog();
         }
         private void DeleteFromDatabase(int id)
         {
