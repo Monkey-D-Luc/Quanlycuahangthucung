@@ -34,7 +34,7 @@ namespace BAITAP
                 textBox4.Text = dt.Rows[0]["birthday"].ToString();
                 label9.Text = dt.Rows[0]["role"].ToString();
                 textBox7.Text = dt.Rows[0]["email"].ToString();
-                textBox8.Text = dt.Rows[0]["password"].ToString();
+                label10.Text = dt.Rows[0]["password"].ToString();
             }
             
         }
@@ -58,6 +58,13 @@ namespace BAITAP
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("OK!");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            change_password cp=new change_password();
+            cp.ShowDialog();
+            
         }
     }
 }

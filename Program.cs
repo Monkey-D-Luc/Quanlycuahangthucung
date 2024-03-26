@@ -12,7 +12,8 @@ namespace BAITAP
     {
         //LAPTOP-50DBODNC- May tinh cua Hoang
         //SETSUNA\SQLEXPRESS - May tinh cua Tuyn
-        public static string cnt = @"Data Source=MSI;Initial Catalog=Petshop;Integrated Security=True;Encrypt=False";
+        
+        public static string cnt = @"Data Source=LAPTOP-50DBODNC;Initial Catalog=Petshop;Integrated Security=True;Encrypt=False";
         public static string username;
         public static string password;
         [STAThread]

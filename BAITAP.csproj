@@ -58,6 +58,12 @@
     <Compile Include="catcontrol.Designer.cs">
       <DependentUpon>catcontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="change_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change_password.Designer.cs">
+      <DependentUpon>change_password.cs</DependentUpon>
+    </Compile>
     <Compile Include="dogcontrol.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="catcontrol.resx">
       <DependentUpon>catcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change_password.resx">
+      <DependentUpon>change_password.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dogcontrol.resx">
       <DependentUpon>dogcontrol.cs</DependentUpon>
