@@ -56,7 +56,7 @@ namespace BAITAP
             using (SqlConnection connection = new SqlConnection(cnt))
             {
                 connection.Open();
-                string query = String.Format("UPDATE Login SET name = '{0}', andress = '{1}', phone_number='{2}',birthday='{3}',email='{4}' WHERE username='{5}';", textBox1.Text,textBox2.Text,textBox3.Text,textBox4.Text,textBox7.Text,username);
+                string query = String.Format("UPDATE Login SET name = N'{0}', andress = N'{1}', phone_number='{2}',birthday='{3}',email='{4}' WHERE username='{5}';", textBox1.Text,textBox2.Text,textBox3.Text,textBox4.Text,textBox7.Text,username);
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("OK!");
