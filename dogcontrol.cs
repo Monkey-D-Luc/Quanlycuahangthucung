@@ -103,7 +103,7 @@ namespace BAITAP
         {  
                 if (radioButton1.Checked)
                 {
-                    dataGridView1.Sort(dataGridView1.Columns["Dog_price"], ListSortDirection.Ascending);
+                    dataGridView1.Sort(dataGridView1.Columns["Giá cả"], ListSortDirection.Ascending);
                 }
         }
 
@@ -111,7 +111,7 @@ namespace BAITAP
         {
                 if (radioButton2.Checked)
                 {
-                    dataGridView1.Sort(dataGridView1.Columns["Dog_price"], ListSortDirection.Descending);
+                    dataGridView1.Sort(dataGridView1.Columns["Giá cả"], ListSortDirection.Descending);
                 }
         }
 

@@ -138,5 +138,62 @@ namespace BAITAP
                 command.ExecuteNonQuery();
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            string selectedCatType = comboBox1.Text;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            if (!string.IsNullOrEmpty(selectedCatType))
+            {
+                SqlConnection connection = new SqlConnection(cnt);
+                string querry = "SELECT * FROM Cat WHERE Cat_type =@CatType";
+                SqlCommand cmd = new SqlCommand(querry, connection);
+                cmd.Parameters.AddWithValue("@CatType", selectedCatType);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                try
+                {
+                    connection.Open();
+                    adapter.Fill(dt);
+                    connection.Close();
+                    if (dt.Rows.Count > 0)
+                    {
+                        dataGridView1.DataSource = dt;
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
+                }
+                finally
+                {
+                    if (connection.State == ConnectionState.Open)
+                    {
+                        connection.Close();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một loại chó từ danh sách");
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                dataGridView1.Sort(dataGridView1.Columns["Giá cả"], ListSortDirection.Ascending);
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                dataGridView1.Sort(dataGridView1.Columns["Giá cả"], ListSortDirection.Descending);
+            }
+        }
     }
 }

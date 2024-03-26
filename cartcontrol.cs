@@ -25,27 +25,33 @@ namespace BAITAP
         {
             double totalPrice = 0;
             bool hasPrice = false;
-
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            if (dataGridView1.Visible)
             {
-                if (!row.IsNewRow && row.Cells["Price"].Value != null && row.Cells["Price"].Value != DBNull.Value)
+                foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    double price;
-                    if (double.TryParse(row.Cells["Price"].Value.ToString(), out price))
+                    if (!row.IsNewRow && row.Cells["Price"].Value != null && row.Cells["Price"].Value != DBNull.Value)
                     {
-                        totalPrice += price;
-                        hasPrice = true; 
+                        double price;
+                        if (double.TryParse(row.Cells["Price"].Value.ToString(), out price))
+                        {
+                            totalPrice += price;
+                            hasPrice = true;
+                        }
+                        else { totalPrice = 0; break; }
                     }
+
+                }
+                if (!hasPrice || totalPrice == 0)
+                {
+                    label1.Text = "Chọn sản phẩm từ cửa hàng";
+                }
+                else
+                {
+                    label1.Text = totalPrice.ToString("C");
                 }
             }
-            if (!hasPrice)
-            {
-                label1.Text = "Chọn sản phẩm từ cửa hàng";
-            }
-            else
-            {
-                label1.Text = totalPrice.ToString("C");
-            }
+            else { label1.Text = "Chọn sản phẩm từ cửa hàng"; }
+           
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -175,6 +181,7 @@ namespace BAITAP
                 }
 
                 showTable();
+                showTotal();
             }
             else
             {
@@ -184,8 +191,8 @@ namespace BAITAP
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            showTotal();
-            showTable();        
+            showTable();
+            showTotal();   
         }
 
         private void label3_Click(object sender, EventArgs e)
