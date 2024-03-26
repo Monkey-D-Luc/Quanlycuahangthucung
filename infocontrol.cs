@@ -18,15 +18,20 @@ namespace BAITAP
         public infocontrol()
         {
             InitializeComponent();
+            load_info();
+            
+        }
+        private void load_info()
+        {
             SqlDataAdapter da;
             DataTable dt = new DataTable();
             using (SqlConnection connection = new SqlConnection(cnt))
             {
-                string query = String.Format("SELECT * FROM Login WHERE username ='{0}'",username);
-                da = new SqlDataAdapter(query,connection);
+                string query = String.Format("SELECT * FROM Login WHERE username ='{0}'", username);
+                da = new SqlDataAdapter(query, connection);
                 da.Fill(dt);
             }
-            if(dt.Rows.Count > 0)
+            if (dt.Rows.Count > 0)
             {
                 textBox1.Text = dt.Rows[0]["name"].ToString();
                 textBox2.Text = dt.Rows[0]["andress"].ToString();
@@ -36,9 +41,7 @@ namespace BAITAP
                 textBox7.Text = dt.Rows[0]["email"].ToString();
                 label10.Text = dt.Rows[0]["password"].ToString();
             }
-            
         }
-
         private void label7_Click(object sender, EventArgs e)
         {
 
@@ -64,6 +67,7 @@ namespace BAITAP
         {
             change_password cp=new change_password();
             cp.ShowDialog();
+            load_info();
             
         }
     }
