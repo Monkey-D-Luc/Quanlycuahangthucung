@@ -58,6 +58,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.label5);
+            this.panel1.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1001, 130);
@@ -66,7 +67,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(283, 20);
+            this.pictureBox9.Location = new System.Drawing.Point(196, 27);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(82, 80);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,13 +76,13 @@
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("HYWenHei-85W", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(371, 37);
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(-1, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(303, 61);
+            this.label5.Size = new System.Drawing.Size(999, 61);
             this.label5.TabIndex = 0;
             this.label5.Text = "SHOPPING";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
@@ -89,7 +90,7 @@
             this.label10.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(299, 154);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(404, 51);
+            this.label10.Size = new System.Drawing.Size(401, 49);
             this.label10.TabIndex = 20;
             this.label10.Text = "THE TYPE OF PET\r\n";
             // 
@@ -99,7 +100,7 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(658, 509);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 38);
+            this.label8.Size = new System.Drawing.Size(84, 37);
             this.label8.TabIndex = 18;
             this.label8.Text = "CAT";
             this.label8.Click += new System.EventHandler(this.label8_Click);
@@ -121,7 +122,7 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(241, 509);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 38);
+            this.label6.Size = new System.Drawing.Size(92, 37);
             this.label6.TabIndex = 17;
             this.label6.Text = "DOG";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -163,7 +164,6 @@
             this.Load += new System.EventHandler(this.shopcontrol_Load);
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

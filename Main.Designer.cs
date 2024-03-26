@@ -114,12 +114,12 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 244);
+            this.label1.Location = new System.Drawing.Point(78, 244);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 42);
+            this.label1.Size = new System.Drawing.Size(178, 42);
             this.label1.TabIndex = 7;
             this.label1.Text = "INFO";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
@@ -127,36 +127,36 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 345);
+            this.label2.Location = new System.Drawing.Point(78, 345);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(240, 42);
+            this.label2.Size = new System.Drawing.Size(178, 42);
             this.label2.TabIndex = 8;
             this.label2.Text = "SHOPPING";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(-1, 444);
+            this.label3.Location = new System.Drawing.Point(78, 444);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(259, 42);
+            this.label3.Size = new System.Drawing.Size(178, 42);
             this.label3.TabIndex = 9;
             this.label3.Text = "CART";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 545);
+            this.label4.Location = new System.Drawing.Point(84, 545);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(253, 42);
+            this.label4.Size = new System.Drawing.Size(172, 42);
             this.label4.TabIndex = 10;
             this.label4.Text = "SERVICE";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel3
@@ -227,7 +227,7 @@
             // infocontrol1
             // 
             this.infocontrol1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.infocontrol1.Location = new System.Drawing.Point(263, 1);
+            this.infocontrol1.Location = new System.Drawing.Point(265, 0);
             this.infocontrol1.Margin = new System.Windows.Forms.Padding(4);
             this.infocontrol1.Name = "infocontrol1";
             this.infocontrol1.Size = new System.Drawing.Size(999, 673);

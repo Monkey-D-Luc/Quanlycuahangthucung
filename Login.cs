@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static BAITAP.Program;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BAITAP
 {
@@ -113,6 +114,38 @@ namespace BAITAP
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if(textBox2.UseSystemPasswordChar == false){
+                textBox2.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = false;
+            }
+            
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
         {
 
         }

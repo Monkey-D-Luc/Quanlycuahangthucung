@@ -49,9 +49,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.shoppingDataSet1 = new BAITAP.ShoppingDataSet();
             this.shoppingDataSet2 = new BAITAP.ShoppingDataSet();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -67,7 +67,7 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label5.Font = new System.Drawing.Font("HYWenHei-85W", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(-2, 0);
             this.label5.Name = "label5";
@@ -80,7 +80,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(28, 16);
+            this.pictureBox6.Location = new System.Drawing.Point(83, 16);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(92, 86);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,7 +91,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(873, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(822, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -300,16 +300,6 @@
             this.label4.Text = "Your schedule";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // shoppingDataSet1
-            // 
-            this.shoppingDataSet1.DataSetName = "ShoppingDataSet";
-            this.shoppingDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // shoppingDataSet2
-            // 
-            this.shoppingDataSet2.DataSetName = "ShoppingDataSet";
-            this.shoppingDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -320,6 +310,16 @@
             this.label6.TabIndex = 53;
             this.label6.Text = "Không có lịch.";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // shoppingDataSet1
+            // 
+            this.shoppingDataSet1.DataSetName = "ShoppingDataSet";
+            this.shoppingDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // shoppingDataSet2
+            // 
+            this.shoppingDataSet2.DataSetName = "ShoppingDataSet";
+            this.shoppingDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // hotelbooking
             // 
