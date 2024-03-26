@@ -77,11 +77,13 @@ namespace BAITAP
                 if (dt.Rows.Count > 0)
                 {
                     dataGridView1.DataSource = dt;
+                    dataGridView1.Visible = true;
+                    dataGridView1.DataSource = dt;
+                    dataGridView1.Columns[0].Visible = false;
                 }
                 else
                 {
-                    dt.Rows.Add("Chọn sản phẩm cần mua");
-                    dataGridView1.DataSource= dt;
+                    dataGridView1.Visible = false;
                 }
             }
             catch (Exception ex)
@@ -160,12 +162,12 @@ namespace BAITAP
                 if (species == "Chó")
                 {
                     AddToDog(deletedRow);
-                    MessageBox.Show("Thêm chó thành công");
+                    MessageBox.Show("Xóa đơn hàng thành công");
                 }
                 else if (species == "Mèo")
                 {
                     AddToCat(deletedRow);
-                    MessageBox.Show("Thêm mèo thành công");
+                    MessageBox.Show("Xóa đơn hàng thành công");
                 }
                 else
                 {
@@ -182,8 +184,13 @@ namespace BAITAP
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            showTable();
             showTotal();
+            showTable();        
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

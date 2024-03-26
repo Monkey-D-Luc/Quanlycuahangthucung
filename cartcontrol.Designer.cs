@@ -40,6 +40,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -84,7 +85,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(114, 26);
+            this.dataGridView1.Location = new System.Drawing.Point(114, 35);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -156,6 +157,7 @@
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(55, 147);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(869, 503);
@@ -171,6 +173,18 @@
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(114, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(643, 292);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Giỏ hàng trống";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // cartcontrol
             // 
@@ -206,5 +220,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
