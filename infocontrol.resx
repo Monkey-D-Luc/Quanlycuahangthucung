@@ -139,7 +139,7 @@
     <value>0</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>INFO</value>
+    <value>THÔNG TIN</value>
   </data>
   <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -1141,7 +1141,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 25</value>
+    <value>192, 23</value>
   </data>
   <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1210,7 +1210,7 @@
     <value>7</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Name:</value>
+    <value>Tên:</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -1243,7 +1243,7 @@
     <value>8</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Andress:</value>
+    <value>Địa chỉ:</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -1276,7 +1276,7 @@
     <value>9</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Phone Number:</value>
+    <value>Số điện thoại:</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -1303,13 +1303,13 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 29</value>
+    <value>104, 29</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Birthday:</value>
+    <value>Ngày sinh:</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -1342,7 +1342,7 @@
     <value>11</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Role:</value>
+    <value>Vai trò:</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -1408,7 +1408,7 @@
     <value>13</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Password:</value>
+    <value>Mật khẩu:</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>

@@ -53,7 +53,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(660, 84);
             this.label9.TabIndex = 29;
-            this.label9.Text = "SERVICE HOTLINE: 09xx-xxx-xxx";
+            this.label9.Text = "LIÊN HỆ 09xx-xxx-xxx";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -61,11 +61,11 @@
             this.label6.BackColor = System.Drawing.SystemColors.HotTrack;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(265, 146);
+            this.label6.Location = new System.Drawing.Point(250, 146);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(479, 84);
+            this.label6.Size = new System.Drawing.Size(501, 84);
             this.label6.TabIndex = 23;
-            this.label6.Text = "PET SPA PRICE MENU";
+            this.label6.Text = "BẢNG GIÁ CHĂM SÓC THÚ CƯNG";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -77,7 +77,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(1001, 129);
             this.label5.TabIndex = 22;
-            this.label5.Text = "SERVICE";
+            this.label5.Text = "DỊCH VỤ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
@@ -106,7 +106,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(167, 146);
+            this.pictureBox6.Location = new System.Drawing.Point(152, 146);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(92, 86);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +117,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(741, 132);
+            this.pictureBox2.Location = new System.Drawing.Point(750, 132);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(157, 114);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -133,6 +133,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // spapricecontrol
             // 

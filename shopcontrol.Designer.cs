@@ -77,22 +77,22 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(-1, 37);
+            this.label5.Location = new System.Drawing.Point(-3, 46);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(999, 61);
             this.label5.TabIndex = 0;
-            this.label5.Text = "SHOPPING";
+            this.label5.Text = "CỬA HÀNG";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(299, 154);
+            this.label10.Location = new System.Drawing.Point(239, 164);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(401, 49);
+            this.label10.Size = new System.Drawing.Size(514, 49);
             this.label10.TabIndex = 20;
-            this.label10.Text = "THE TYPE OF PET\r\n";
+            this.label10.Text = "CHỌN LOẠI THÚ CƯNG";
             // 
             // label8
             // 
@@ -100,9 +100,9 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(658, 509);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 37);
+            this.label8.Size = new System.Drawing.Size(97, 37);
             this.label8.TabIndex = 18;
-            this.label8.Text = "CAT";
+            this.label8.Text = "MÈO";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // pictureBox7
@@ -122,9 +122,9 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(241, 509);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 37);
+            this.label6.Size = new System.Drawing.Size(89, 37);
             this.label6.TabIndex = 17;
-            this.label6.Text = "DOG";
+            this.label6.Text = "CÚN";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox6

@@ -63,7 +63,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(313, 28);
+            this.pictureBox6.Location = new System.Drawing.Point(232, 28);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(70, 58);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -78,7 +78,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(999, 58);
             this.label5.TabIndex = 0;
-            this.label5.Text = "CART";
+            this.label5.Text = "GIỎ HÀNG";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
@@ -118,12 +118,13 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 9);
+            this.label6.Location = new System.Drawing.Point(3, 9);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label6.Size = new System.Drawing.Size(107, 33);
+            this.label6.Size = new System.Drawing.Size(165, 33);
             this.label6.TabIndex = 0;
-            this.label6.Text = "TOTAL:";
+            this.label6.Text = "TỔNG TIỀN:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button2
             // 
@@ -133,7 +134,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(306, 72);
             this.button2.TabIndex = 17;
-            this.button2.Text = "DELETE\r\n";
+            this.button2.Text = "XÓA";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -141,11 +142,11 @@
             // 
             this.button3.BackColor = System.Drawing.Color.LightGreen;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(451, 405);
+            this.button3.Location = new System.Drawing.Point(450, 405);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(306, 72);
             this.button3.TabIndex = 18;
-            this.button3.Text = "PURCHASE\r\n";
+            this.button3.Text = "MUA";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

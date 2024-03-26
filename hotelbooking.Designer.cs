@@ -73,8 +73,9 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(1001, 129);
             this.label5.TabIndex = 53;
-            this.label5.Text = "HOTEL BOOKING";
+            this.label5.Text = "ĐẶT LỊCH GỬI THÚ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox6
             // 
@@ -166,9 +167,9 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(16, 98);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 34);
+            this.label7.Size = new System.Drawing.Size(127, 34);
             this.label7.TabIndex = 48;
-            this.label7.Text = "- Weight:";
+            this.label7.Text = "- Cân nặng:";
             // 
             // label3
             // 
@@ -177,7 +178,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 34);
             this.label3.TabIndex = 48;
-            this.label3.Text = "- Species:";
+            this.label3.Text = "- Loài:";
             // 
             // label1
             // 
@@ -186,7 +187,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(351, 34);
             this.label1.TabIndex = 48;
-            this.label1.Text = "Pet description";
+            this.label1.Text = "Mô tả thú cưng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
@@ -197,7 +198,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(219, 62);
             this.button2.TabIndex = 67;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "Hủy";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -209,7 +210,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(219, 62);
             this.button1.TabIndex = 68;
-            this.button1.Text = "Book";
+            this.button1.Text = "Đặt";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -242,7 +243,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(346, 34);
             this.label2.TabIndex = 48;
-            this.label2.Text = "Time select";
+            this.label2.Text = "Chọn ngày";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox5
@@ -297,7 +298,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(405, 34);
             this.label4.TabIndex = 48;
-            this.label4.Text = "Your schedule";
+            this.label4.Text = "Lịch của bạn";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6

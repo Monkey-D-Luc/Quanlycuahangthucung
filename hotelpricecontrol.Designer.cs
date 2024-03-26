@@ -67,11 +67,11 @@
             this.label9.BackColor = System.Drawing.SystemColors.HotTrack;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Window;
-            this.label9.Location = new System.Drawing.Point(172, 548);
+            this.label9.Location = new System.Drawing.Point(172, 544);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(660, 84);
             this.label9.TabIndex = 34;
-            this.label9.Text = "SERVICE HOTLINE: 09xx-xxx-xxx";
+            this.label9.Text = "LIÊN HỆ: 09xx-xxx-xxx";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -83,7 +83,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(479, 84);
             this.label6.TabIndex = 33;
-            this.label6.Text = "PET HOTEL PRICE MENU";
+            this.label6.Text = "BẢNG GIÁ GỬI THÚ CƯNG";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
@@ -96,7 +96,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(1001, 129);
             this.label5.TabIndex = 32;
-            this.label5.Text = "SERVICE";
+            this.label5.Text = "DỊCH VỤ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 

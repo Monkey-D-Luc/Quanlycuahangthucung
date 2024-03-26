@@ -60,7 +60,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 35);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Password:";
+            this.label3.Text = "Mật khẩu:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox2
@@ -94,7 +94,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 35);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Username:";
+            this.label2.Text = "Tài khoản:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -129,7 +129,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(230, 35);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Re-enter password:";
+            this.label1.Text = "Nhập lại mật khẩu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
@@ -159,10 +159,10 @@
             this.linkLabel2.LinkColor = System.Drawing.Color.Red;
             this.linkLabel2.Location = new System.Drawing.Point(24, 14);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(82, 22);
+            this.linkLabel2.Size = new System.Drawing.Size(120, 22);
             this.linkLabel2.TabIndex = 16;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "<< Login";
+            this.linkLabel2.Text = "<< Đăng nhập";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // button1
@@ -175,7 +175,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 42);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Sign up";
+            this.button1.Text = "Đăng ký";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -210,7 +210,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(210, 63);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Register";
+            this.label4.Text = "Đăng ký";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3

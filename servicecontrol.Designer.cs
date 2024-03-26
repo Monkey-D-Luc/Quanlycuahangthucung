@@ -68,7 +68,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(660, 84);
             this.label9.TabIndex = 19;
-            this.label9.Text = "SERVICE HOTLINE: 09xx-xxx-xxx";
+            this.label9.Text = "LIÊN HỆ: 09xx-xxx-xxx";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button4
@@ -78,7 +78,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(392, 84);
             this.button4.TabIndex = 18;
-            this.button4.Text = "Price menu";
+            this.button4.Text = "Bảng giá";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -89,7 +89,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(392, 84);
             this.button5.TabIndex = 17;
-            this.button5.Text = "Booking";
+            this.button5.Text = "Đặt lịch";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -100,7 +100,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(392, 84);
             this.button3.TabIndex = 16;
-            this.button3.Text = "Price menu";
+            this.button3.Text = "Bảng giá";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -111,7 +111,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(392, 84);
             this.button2.TabIndex = 15;
-            this.button2.Text = "Booking";
+            this.button2.Text = "Đặt lịch";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -124,7 +124,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(195, 84);
             this.label8.TabIndex = 14;
-            this.label8.Text = "PET HOTEL";
+            this.label8.Text = "Gửi thú";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -136,7 +136,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(195, 84);
             this.label6.TabIndex = 13;
-            this.label6.Text = "PET SPA";
+            this.label6.Text = "Chăm sóc";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -148,7 +148,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(1001, 129);
             this.label5.TabIndex = 12;
-            this.label5.Text = "SERVICE";
+            this.label5.Text = "DỊCH VỤ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox10

@@ -73,7 +73,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(999, 58);
             this.label5.TabIndex = 0;
-            this.label5.Text = "SHOPPING - CAT";
+            this.label5.Text = "CỬA HÀNG - MÈO";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // vScrollBar1
@@ -122,9 +122,9 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 15);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 32);
+            this.label6.Size = new System.Drawing.Size(85, 32);
             this.label6.TabIndex = 15;
-            this.label6.Text = "TYPE";
+            this.label6.Text = "LOÀI";
             // 
             // pictureBox2
             // 
@@ -163,10 +163,10 @@
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(139, 43);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(135, 29);
+            this.radioButton2.Size = new System.Drawing.Size(151, 29);
             this.radioButton2.TabIndex = 18;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "High to Low";
+            this.radioButton2.Text = "Cao đến thấp";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
@@ -176,10 +176,10 @@
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(139, 8);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(135, 29);
+            this.radioButton1.Size = new System.Drawing.Size(154, 29);
             this.radioButton1.TabIndex = 17;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Low to High";
+            this.radioButton1.Text = "Thấp đến cao";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -187,11 +187,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 18);
+            this.label8.Location = new System.Drawing.Point(32, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 32);
+            this.label8.Size = new System.Drawing.Size(66, 32);
             this.label8.TabIndex = 16;
-            this.label8.Text = "PRICE";
+            this.label8.Text = "GIÁ";
             // 
             // dataGridView1
             // 
@@ -227,7 +227,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(214, 56);
             this.button2.TabIndex = 34;
-            this.button2.Text = "ADD TO CART";
+            this.button2.Text = "THÊM VÀO GIỎ";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
