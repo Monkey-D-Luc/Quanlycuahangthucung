@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using static BAITAP.cartcontrol;
 namespace BAITAP
 {
     public partial class Purchase : Form
@@ -16,6 +17,8 @@ namespace BAITAP
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
+            CultureInfo cul = new CultureInfo("vi-VN");
+            label6.Text= totalPrice.ToString("C", cul); 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
