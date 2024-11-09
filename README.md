@@ -1,4 +1,4 @@
-@ -3,32 +3,41 @@ và Sql server làm cơ sở dữ liệu nằm trên máy
+
 -------------------------------
 ![image](https://github.com/Monkey-D-Luc/Quanlycuahangthucung/assets/133494882/4e225007-8a95-4fce-b6bb-70ed8db9e3b7)
 ![image](https://github.com/Monkey-D-Luc/Quanlycuahangthucung/assets/133494882/12f956d5-7256-4624-9798-933ed0cfa0a0)
